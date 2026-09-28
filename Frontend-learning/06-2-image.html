@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Images</title>
+</head>
+<body>
+
+    <h1>HTML Images</h1>
+
+    <!--
+        The <img> tag is used to display an image on a webpage.
+
+        Important attributes:
+        src    = path or URL of the image
+        alt    = alternative text for accessibility
+        width  = image width
+        height = image height
+    -->
+
+    <h2>1. Basic Image</h2>
+
+    <img src="https://picsum.photos/300/200"
+         alt="Random sample image">
+
+
+    <h2>2. Image with Width and Height</h2>
+
+    <img src="https://picsum.photos/400/250"
+         alt="Sample landscape image"
+         width="400"
+         height="250">
+
+
+    <h2>3. Image with Title</h2>
+
+    <!--
+        The title attribute shows additional information
+        when the user moves the mouse over the image.
+    -->
+
+    <img src="https://picsum.photos/300/200"
+         alt="Sample image"
+         title="This is a sample image">
+
+
+    <h2>4. Image with Link</h2>
+
+    <!--
+        An image can be placed inside an <a> tag.
+        Clicking the image will open the linked page.
+    -->
+
+    <a href="https://www.google.com">
+        <img src="https://picsum.photos/300/200"
+             alt="Click this image to visit Google">
+    </a>
+
+
+    <h2>5. Responsive Image</h2>
+
+    <!--
+        max-width: 100% makes the image responsive.
+    -->
+
+    <img src="https://picsum.photos/800/400"
+         alt="Responsive sample image"
+         style="max-width: 100%; height: auto;">
+
+
+    <h2>6. Figure and Caption</h2>
+
+    <!--
+        <figure> groups an image with its caption.
+        <figcaption> provides a caption for the image.
+    -->
+
+    <figure>
+
+        <img src="https://picsum.photos/400/250"
+             alt="Sample landscape image"
+             width="400">
+
+        <figcaption>
+            Figure 1: A sample landscape image.
+        </figcaption>
+
+    </figure>
+
+
+    <h2>7. Image with Loading Feature</h2>
+
+    <!--
+        loading="lazy" loads the image when it is near
+        the visible area of the webpage.
+    -->
+
+    <img src="https://picsum.photos/600/300"
+         alt="Lazy loaded sample image"
+         loading="lazy"
+         width="600">
+
+
+    <h2>8. Decorative Image</h2>
+
+    <!--
+        If an image is only decorative,
+        alt can be empty.
+    -->
+
+    <img src="https://picsum.photos/200/150"
+         alt=""
+         width="200">
+
+</body>
+</html>
