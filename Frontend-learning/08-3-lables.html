@@ -1,0 +1,119 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    
+    <meta charset="UTF-8"><!-- Making the page responsive on different devices -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>HTML Labels</title>
+
+</head><body>
+<h1>HTML Label Element</h1>
+
+<!-- Basic introduction to the label element -->
+<p>
+    The &lt;label&gt; element is used to give a name or description
+    to a form input.
+</p>
+
+
+<!-- Example 1: Label with a text input -->
+<h2>1. Label with Text Input</h2>
+
+<form>
+    <!-- The 'for' attribute connects the label with the input id -->
+    <label for="name">Name:</label>
+
+    <!-- Text input for entering the name -->
+    <input type="text" id="name" name="name">
+</form>
+
+
+<!-- Separating the examples -->
+<hr>
+
+
+<!-- Example 2: Label with an email input -->
+<h2>2. Label with Email Input</h2>
+
+<form>
+    <!-- Label for the email input -->
+    <label for="email">Email:</label>
+
+    <!-- Email input field -->
+    <input type="email" id="email" name="email">
+</form>
+
+
+<hr>
+
+
+<!-- Example 3: Label with a password input -->
+<h2>3. Label with Password Input</h2>
+
+<form>
+    <!-- Label for the password field -->
+    <label for="password">Password:</label>
+
+    <!-- Password input hides the entered characters -->
+    <input type="password" id="password" name="password">
+</form>
+
+
+<hr>
+
+
+<!-- Example 4: Labels with radio buttons -->
+<h2>4. Label with Radio Buttons</h2>
+
+<form>
+    <!-- Question for the radio buttons -->
+    <p>Choose your gender:</p>
+
+    <!-- First radio button -->
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+
+    <!-- Second radio button -->
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+
+    <!-- Third radio button -->
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label>
+</form>
+
+
+<hr>
+
+
+<!-- Example 5: Label with a checkbox -->
+<h2>5. Label with Checkbox</h2>
+
+<form>
+    <!-- Checkbox for accepting terms -->
+    <input type="checkbox" id="terms" name="terms">
+
+    <!-- Label connected to the checkbox -->
+    <label for="terms">I agree to the terms and conditions.</label>
+</form>
+
+
+<hr>
+
+
+<!-- Example 6: Putting the input inside the label -->
+<h2>6. Label Wrapping an Input</h2>
+
+<form>
+    <!-- Here the input is placed directly inside the label -->
+    <label>
+        Username:
+
+        <!-- Text input for username -->
+        <input type="text" name="username">
+    </label>
+</form>
+
+</body>
+</html>
