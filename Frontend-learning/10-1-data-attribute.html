@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Data Attributes</title>
+</head>
+<body>
+
+    <!-- Page heading -->
+    <h1>HTML Data Attributes</h1>
+
+    <p>
+        Data attributes allow us to store extra information
+        inside HTML elements using custom data-* attributes.
+    </p>
+
+    <!-- Each product has its own custom data attributes -->
+    <div
+        id="product"
+        data-name="Laptop"
+        data-price="55000"
+        data-category="Electronics">
+
+        <h2>Laptop</h2>
+        <p>Price: ₹55,000</p>
+        <p>Category: Electronics</p>
+
+    </div>
+
+    <!-- Another example using data attributes -->
+    <button
+        id="showDetails"
+        data-message="You clicked the details button!">
+
+        Show Details
+    </button>
+
+    <p id="output"></p>
+
+    <script>
+        // Get the product element from the page.
+        const product = document.getElementById("product");
+
+        // Read the custom data stored in its data-* attributes.
+        const productName = product.dataset.name;
+        const productPrice = product.dataset.price;
+        const productCategory = product.dataset.category;
+
+        // Display the product information in the browser console.
+        console.log("Product Name:", productName);
+        console.log("Product Price:", productPrice);
+        console.log("Product Category:", productCategory);
+
+        // Get the button and the paragraph used to show its message.
+        const button = document.getElementById("showDetails");
+        const output = document.getElementById("output");
+
+        // Show the custom message when the button is clicked.
+        button.addEventListener("click", function () {
+            output.textContent = button.dataset.message;
+        });
+    </script>
+
+</body>
+</html>
