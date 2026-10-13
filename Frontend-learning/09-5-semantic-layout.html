@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Semantic HTML Layout</title>
+</head>
+<body>
+
+    <!-- The header contains the website title and introduction -->
+    <header>
+        <h1>My Learning Website</h1>
+        <p>A simple example of a semantic HTML layout.</p>
+    </header>
+
+    <!-- Navigation links help users move between website sections -->
+    <nav aria-label="Main navigation">
+        <a href="#home">Home</a> |
+        <a href="#about">About</a> |
+        <a href="#articles">Articles</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Main contains the primary content of this webpage -->
+    <main id="home">
+
+        <!-- This section introduces the purpose of the website -->
+        <section id="about">
+            <h2>About This Website</h2>
+            <p>
+                This website is created to practice HTML and learn
+                how semantic elements organize webpage content.
+            </p>
+        </section>
+
+        <!-- Articles can contain independent pieces of content -->
+        <section id="articles">
+            <h2>Latest Articles</h2>
+
+            <article>
+                <h3>Getting Started with HTML</h3>
+                <p>
+                    HTML provides the basic structure of a webpage.
+                    It helps us organize headings, paragraphs,
+                    images, links, and other content.
+                </p>
+            </article>
+
+            <article>
+                <h3>Why Semantic HTML Matters</h3>
+                <p>
+                    Semantic elements give meaning to webpage
+                    content and help browsers and assistive
+                    technologies understand its structure.
+                </p>
+            </article>
+        </section>
+
+        <!-- Aside contains additional information related to the page -->
+        <aside>
+            <h2>Learning Tip</h2>
+            <p>
+                Practice writing HTML examples regularly to
+                understand how different elements work.
+            </p>
+        </aside>
+
+    </main>
+
+    <!-- The footer contains closing information and contact details -->
+    <footer id="contact">
+        <p>Contact: learner@example.com</p>
+        <p>&copy; 2026 My Learning Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
