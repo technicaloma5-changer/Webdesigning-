@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Progress and Meter</title>
+</head>
+<body>
+
+  
+    <h1>HTML Progress and Meter Elements</h1>
+
+    <p>
+        HTML provides the progress and meter elements to display
+        progress and measurements visually.
+    </p>
+
+    <!-- The progress element shows how much of a task is complete -->
+    <section>
+        <h2>1. Progress Element</h2>
+
+        <p>File Upload Progress:</p>
+        <progress value="70" max="100">70%</progress>
+        <p>70% completed</p>
+
+        <p>Course Completion:</p>
+        <progress value="40" max="100">40%</progress>
+        <p>40% of the course completed</p>
+    </section>
+
+    <hr>
+
+    <!-- The meter element represents a value within a known range -->
+    <section>
+        <h2>2. Meter Element</h2>
+
+        <p>Battery Level:</p>
+        <meter min="0" max="100" value="80">80%</meter>
+        <p>Battery level: 80%</p>
+
+        <p>Storage Used:</p>
+        <meter min="0" max="100" value="60">60%</meter>
+        <p>Storage used: 60%</p>
+    </section>
+
+    <hr>
+
+    <!-- Meter can also show whether a value is low, medium, or high -->
+    <section>
+        <h2>3. Meter with Different Ranges</h2>
+
+        <p>Low Level:</p>
+        <meter min="0" max="100" low="30" high="70"
+               optimum="20" value="20">20%</meter>
+
+        <p>Normal Level:</p>
+        <meter min="0" max="100" low="30" high="70"
+               optimum="50" value="50">50%</meter>
+
+        <p>High Level:</p>
+        <meter min="0" max="100" low="30" high="70"
+               optimum="50" value="90">90%</meter>
+    </section>
+
+    <hr>
+
+    <!-- A short summary to remember the difference -->
+    <section>
+        <h2>What I Learned</h2>
+
+        <ul>
+            <li>
+                The progress element shows how much of a task
+                has been completed.
+            </li>
+            <li>
+                The meter element displays a measurement within
+                a defined range.
+            </li>
+            <li>
+                Both elements can display values without using JavaScript.
+            </li>
+        </ul>
+    </section>
+
+</body>
+</html>
