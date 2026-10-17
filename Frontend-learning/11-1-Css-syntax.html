@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Syntax - Tutorial</title>
+
+    <style>
+        /* CSS syntax: selector { property: value; } */
+
+        /* Selects the entire page */
+        body {
+            background-color: #f4f7fc;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        /* Styles the main heading */
+        h1 {
+            color: #2563eb;
+            text-align: center;
+        }
+
+        /* Applies the same styling to all section headings */
+        h2 {
+            color: #1e293b;
+            border-bottom: 2px solid #2563eb;
+            padding-bottom: 5px;
+        }
+
+        /* Styles the content container */
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 25px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        /* Styles paragraphs */
+        p {
+            color: #475569;
+            font-size: 16px;
+        }
+
+        /* This class highlights an important message */
+        .highlight {
+            color: #15803d;
+            font-weight: bold;
+        }
+
+        /* Styles the example code block */
+        .code-example {
+            background-color: #f1f5f9;
+            padding: 15px;
+            border-left: 4px solid #2563eb;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        /* Adds some space below the footer */
+        footer {
+            text-align: center;
+            margin-top: 25px;
+            color: #64748b;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Main heading introduces the topic -->
+    <h1>Introduction to CSS Syntax</h1>
+
+    <div class="container">
+
+        <section>
+            <h2>What is CSS?</h2>
+
+            <p>
+                CSS stands for Cascading Style Sheets.
+                It is used to style HTML elements and control
+                how a webpage looks.
+            </p>
+
+            <p class="highlight">
+                CSS makes webpages more attractive and easier to read.
+            </p>
+        </section>
+
+        <section>
+            <h2>Understanding CSS Syntax</h2>
+
+            <p>
+                A CSS rule contains a selector and a declaration block.
+                Each declaration consists of a property and a value.
+            </p>
+
+            <!-- A simple example showing the basic CSS structure -->
+            <pre class="code-example"><code>h1 {
+    color: blue;
+    font-size: 32px;
+}</code></pre>
+
+            <p>
+                <strong>Selector:</strong> h1 selects all h1 elements.
+                <br>
+
+                <strong>Property:</strong> color specifies which
+                text color to use.
+                <br>
+
+                <strong>Value:</strong> blue is the color assigned
+                to the property.
+            </p>
+        </section>
+
+        <section>
+            <h2>CSS Properties and Values</h2>
+
+            <p>
+                CSS properties control different visual aspects
+                of an element, such as its color, size and spacing.
+            </p>
+
+            <ul>
+                <li><strong>color:</strong> Changes text color.</li>
+                <li><strong>font-size:</strong> Changes text size.</li>
+                <li><strong>background-color:</strong> Sets the background color.</li>
+                <li><strong>text-align:</strong> Aligns text horizontally.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Why Are CSS Comments Useful?</h2>
+
+            <p>
+                Comments help explain what a CSS rule does.
+                They are useful when reviewing code or returning
+                to a project after some time.
+            </p>
+
+            <!-- This is an HTML comment.
+                 CSS comments use a different syntax: /* comment */ -->
+        </section>
+
+    </div>
+
+    <!-- Footer provides a simple closing message -->
+    <footer>
+        <p>CSS Learning Series | Practice and Keep Learning!</p>
+    </footer>
+
+</body>
+</html>
