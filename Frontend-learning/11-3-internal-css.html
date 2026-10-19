@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic information about the webpage -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Internal CSS Example</title>
+
+    <!-- Internal CSS is written inside the style tag -->
+    <style>
+        /* Set the overall look of the webpage */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fc;
+            margin: 0;
+            padding: 20px;
+            color: #333333;
+        }
+
+        /* Style the main heading */
+        h1 {
+            color: #1d4ed8;
+            text-align: center;
+        }
+
+        /* Keep the introduction easy to read */
+        .intro {
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* Give the content section a simple card-like appearance */
+        .content {
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 25px auto;
+            max-width: 600px;
+            border-radius: 8px;
+        }
+
+        /* Use a different color for section headings */
+        h2 {
+            color: #15803d;
+        }
+
+        /* Style the button to make it stand out */
+        button {
+            background-color: #1d4ed8;
+            color: #ffffff;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Change the button color when the mouse moves over it */
+        button:hover {
+            background-color: #1e40af;
+        }
+
+        /* Keep the footer text centered */
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #666666;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main heading of the page -->
+    <h1>Learning Internal CSS</h1>
+
+    <p class="intro">
+        This webpage demonstrates how CSS can be written
+        inside the HTML document using the style tag.
+    </p>
+
+    <!-- Main content section -->
+    <div class="content">
+        <h2>What is Internal CSS?</h2>
+
+        <p>
+            Internal CSS allows us to style HTML elements by
+            writing CSS rules inside the style tag in the head
+            section of an HTML document.
+        </p>
+
+        <p>
+            It is useful when we want to apply styles to a
+            single webpage without creating a separate CSS file.
+        </p>
+
+        <!-- A simple button to demonstrate CSS styling -->
+        <button type="button">Learn More</button>
+    </div>
+
+    <!-- Footer at the bottom of the webpage -->
+    <footer>
+        <p>&copy; 2026 My Web Development Learning Journey</p>
+    </footer>
+
+</body>
+</html>
