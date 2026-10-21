@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic information about the webpage -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Class Selector</title>
+
+    <style>
+        /* Styling all elements that use the "heading" class */
+        .heading {
+            color: blue;
+            text-align: center;
+        }
+
+        /* Adding a different style to paragraphs with the "intro" class */
+        .intro {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* Reusing the same class to give multiple elements a similar style */
+        .highlight {
+            background-color: lightyellow;
+            padding: 10px;
+            border-left: 4px solid orange;
+        }
+
+        /* Styling the box that contains our example */
+        .container {
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1 class="heading">CSS Class Selector</h1>
+
+        <p class="intro">
+            A class selector is used to apply CSS styles to HTML elements
+            that have a specific class attribute.
+        </p>
+
+        <p class="highlight">
+            This paragraph uses the highlight class.
+        </p>
+
+        <p class="highlight">
+            We can reuse the same class on multiple elements.
+        </p>
+
+        <p>
+            This paragraph has no class, so it does not receive
+            the special styles defined above.
+        </p>
+
+    </div>
+
+</body>
+</html>
