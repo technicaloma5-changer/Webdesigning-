@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Attribute Selectors</title>
+
+    <style>
+        /* Keep the page simple and easy to read */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #f4f6f8;
+            color: #333;
+        }
+
+        h1 {
+            color: #1d3557;
+        }
+
+        h2 {
+            margin-top: 30px;
+            color: #457b9d;
+        }
+
+        /* Selects every input element that has a type="text" attribute */
+        input[type="text"] {
+            border: 2px solid #457b9d;
+            padding: 8px;
+            border-radius: 5px;
+        }
+
+        /* Selects buttons that have a type="submit" attribute */
+        button[type="submit"] {
+            background-color: #2a9d8f;
+            color: white;
+            padding: 10px 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Selects links that open in a new tab */
+        a[target="_blank"] {
+            color: #e76f51;
+            font-weight: bold;
+        }
+
+        /* Selects elements whose class attribute contains the word "highlight" */
+        [class~="highlight"] {
+            background-color: #fff3b0;
+            padding: 8px;
+        }
+
+        /* Selects links whose href begins with "https" */
+        a[href^="https"] {
+            text-decoration: none;
+        }
+
+        /* Selects elements whose title attribute contains the word "CSS" */
+        [title*="CSS"] {
+            border-bottom: 2px solid #457b9d;
+        }
+
+        /* Add some spacing between form elements */
+        input,
+        button {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Attribute Selectors</h1>
+
+    <p>
+        Attribute selectors allow us to style HTML elements
+        based on their attributes and attribute values.
+    </p>
+
+    <!-- Example 1: Select an input by its type attribute -->
+    <h2>1. Exact Attribute Match</h2>
+
+    <form action="#" method="get">
+        <label for="username">Username:</label><br>
+
+        <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Enter your username">
+
+        <br>
+
+        <label for="email">Email:</label><br>
+
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email">
+
+        <br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Example 2: Select a link using its target attribute -->
+    <h2>2. Target Attribute Selector</h2>
+
+    <p>
+        <a
+            href="https://developer.mozilla.org/"
+            target="_blank"
+            rel="noopener noreferrer">
+            Visit MDN Web Docs
+        </a>
+    </p>
+
+    <!-- Example 3: Match a complete word in the class attribute -->
+    <h2>3. Word Match Selector</h2>
+
+    <p class="highlight important">
+        This paragraph contains the highlight class.
+    </p>
+
+    <p class="normal">
+        This paragraph does not have the highlight class.
+    </p>
+
+    <!-- Example 4: Select an element using part of its attribute value -->
+    <h2>4. Partial Attribute Match</h2>
+
+    <p title="Learn CSS Selectors">
+        Move your attention to this paragraph.
+        Its title contains the word CSS.
+    </p>
+
+    <p title="Learn HTML">
+        This paragraph has a different title.
+    </p>
+
+    <!-- A short reminder of what we learned -->
+    <h2>What I Learned</h2>
+
+    <ul>
+        <li><code>[type="text"]</code> selects an exact attribute value.</li>
+        <li><code>[target="_blank"]</code> matches a specific target value.</li>
+        <li><code>[class~="highlight"]</code> matches a complete word.</li>
+        <li><code>[href^="https"]</code> matches values that start with a string.</li>
+        <li><code>[title*="CSS"]</code> matches values containing a string.</li>
+    </ul>
+
+</body>
+</html>
