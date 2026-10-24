@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Combinators</title>
+
+    <style>
+        /* Keep the page simple and easy to read */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #f4f6f8;
+            color: #333;
+        }
+
+        h1 {
+            color: #1d3557;
+        }
+
+        h2 {
+            margin-top: 30px;
+            color: #457b9d;
+        }
+
+        .box {
+            background-color: white;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+
+        /* 1. Descendant Combinator
+           Selects all paragraphs inside .descendant,
+           including paragraphs nested inside other elements. */
+        .descendant p {
+            color: #d62828;
+        }
+
+        /* 2. Child Combinator
+           Selects only paragraphs that are direct children
+           of the .child element. */
+        .child > p {
+            color: #2a9d8f;
+        }
+
+        /* 3. Adjacent Sibling Combinator
+           Selects the first paragraph immediately following h3. */
+        h3 + p {
+            color: #7b2cbf;
+            font-weight: bold;
+        }
+
+        /* 4. General Sibling Combinator
+           Selects all paragraphs that come after h3
+           and share the same parent element. */
+        h3 ~ p {
+            background-color: #fff3b0;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Combinators</h1>
+
+    <p>
+        CSS combinators help us select HTML elements based
+        on their relationship with other elements.
+    </p>
+
+    <!-- Example 1: Descendant Combinator -->
+    <section class="box descendant">
+        <h2>1. Descendant Combinator (space)</h2>
+
+        <p>This paragraph is inside the section.</p>
+
+        <div>
+            <p>This paragraph is nested inside a div.</p>
+        </div>
+    </section>
+
+    <!-- Example 2: Child Combinator -->
+    <section class="box child">
+        <h2>2. Child Combinator (&gt;)</h2>
+
+        <p>This is a direct child of the section.</p>
+
+        <div>
+            <p>This paragraph is inside a div, not a direct child.</p>
+        </div>
+    </section>
+
+    <!-- Example 3: Adjacent Sibling Combinator -->
+    <section class="box">
+        <h2>3. Adjacent Sibling Combinator (+)</h2>
+
+        <h3>CSS Selectors</h3>
+
+        <p>This paragraph comes immediately after the h3.</p>
+
+        <p>This paragraph does not come immediately after the h3.</p>
+    </section>
+
+    <!-- Example 4: General Sibling Combinator -->
+    <section class="box">
+        <h2>4. General Sibling Combinator (~)</h2>
+
+        <h3>Learning CSS</h3>
+
+        <p>This is the first paragraph after the h3.</p>
+
+        <p>This is another paragraph after the h3.</p>
+
+        <div>
+            <p>This paragraph is inside a div.</p>
+        </div>
+
+        <p>This is the last paragraph after the h3.</p>
+    </section>
+
+</body>
+</html>
