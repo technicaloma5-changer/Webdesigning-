@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Colors</title>
+
+    <style>
+        /* Keep the page simple and easy to read */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+
+        /* Style the main heading */
+        h1 {
+            color: navy;
+            text-align: center;
+        }
+
+        /* Add some space between the examples */
+        .color-box {
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+            font-size: 18px;
+        }
+
+        /* Example 1: Using a color name */
+        .named-color {
+            background-color: lightblue;
+            color: darkblue;
+        }
+
+        /* Example 2: Using a HEX color value */
+        .hex-color {
+            background-color: #d1f2eb;
+            color: #117864;
+        }
+
+        /* Example 3: Using RGB values */
+        .rgb-color {
+            background-color: rgb(255, 218, 185);
+            color: rgb(139, 69, 19);
+        }
+
+        /* Example 4: Using HSL values */
+        .hsl-color {
+            background-color: hsl(280, 60%, 90%);
+            color: hsl(280, 60%, 30%);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Page title introduces the topic -->
+    <h1>CSS Colors</h1>
+
+    <p>
+        CSS colors help us change the appearance of text,
+        backgrounds, borders, and other elements on a webpage.
+    </p>
+
+    <!-- Example 1: Colors can be specified by their names -->
+    <div class="color-box named-color">
+        <h2>1. Color Names</h2>
+        <p>This box uses named colors like lightblue and darkblue.</p>
+    </div>
+
+    <!-- Example 2: HEX codes are another way to define colors -->
+    <div class="color-box hex-color">
+        <h2>2. HEX Colors</h2>
+        <p>This box uses HEX values such as #d1f2eb and #117864.</p>
+    </div>
+
+    <!-- Example 3: RGB defines colors using red, green, and blue -->
+    <div class="color-box rgb-color">
+        <h2>3. RGB Colors</h2>
+        <p>This box uses RGB values to set its background and text colors.</p>
+    </div>
+
+    <!-- Example 4: HSL defines hue, saturation, and lightness -->
+    <div class="color-box hsl-color">
+        <h2>4. HSL Colors</h2>
+        <p>This box uses HSL values to create a light purple background.</p>
+    </div>
+
+</body>
+</html>
