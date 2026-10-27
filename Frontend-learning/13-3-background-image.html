@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Background Image</title>
+
+    <style>
+        /* Basic styling for the entire page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f7fc;
+            color: #333;
+        }
+
+        /* Create a hero section with a background image */
+        .hero {
+            min-height: 400px;
+
+            /* Add an image behind the content */
+            background-image: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80");
+
+            /* Make sure the image covers the entire section */
+            background-size: cover;
+
+            /* Keep the image centered */
+            background-position: center;
+
+            /* Prevent the image from repeating */
+            background-repeat: no-repeat;
+
+            /* Center the text inside the section */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            /* Add spacing around the content */
+            padding: 20px;
+            box-sizing: border-box;
+
+            /* Use a dark background color if the image doesn't load */
+            background-color: #1e293b;
+
+            /* Make the text readable over the image */
+            color: white;
+        }
+
+        /* Style the main heading */
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 600px;
+            line-height: 1.6;
+        }
+
+        /* Keep the examples neatly arranged */
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .example-box {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Display the CSS property names clearly */
+        code {
+            background-color: #e2e8f0;
+            padding: 3px 6px;
+            border-radius: 4px;
+        }
+
+        /* Adjust the heading for smaller screens */
+        @media (max-width: 600px) {
+            .hero {
+                min-height: 320px;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero section with a scenic background image -->
+    <header class="hero">
+        <h1>Explore the Beauty of Nature</h1>
+
+        <p>
+            Learn how CSS background images can make a webpage
+            more attractive and visually appealing.
+        </p>
+    </header>
+
+    <!-- Explain the CSS properties used in this example -->
+    <main class="container">
+        <section class="example-box">
+            <h2>1. Background Image</h2>
+
+            <p>
+                The <code>background-image</code> property adds
+                an image behind an element's content.
+            </p>
+
+            <pre><code>background-image: url("image.jpg");</code></pre>
+        </section>
+
+        <section class="example-box">
+            <h2>2. Background Size</h2>
+
+            <p>
+                The <code>background-size: cover;</code> property
+                makes the image cover the entire section.
+                Some parts of the image may be cropped.
+            </p>
+        </section>
+
+        <section class="example-box">
+            <h2>3. Background Position</h2>
+
+            <p>
+                The <code>background-position: center;</code>
+                property keeps the main part of the image centered.
+            </p>
+        </section>
+
+        <section class="example-box">
+            <h2>4. Background Repeat</h2>
+
+            <p>
+                The <code>background-repeat: no-repeat;</code>
+                property prevents the image from repeating
+                across the section.
+            </p>
+        </section>
+    </main>
+
+</body>
+</html>
