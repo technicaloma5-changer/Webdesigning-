@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Gradients</title>
+
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            color: #222;
+        }
+
+        p {
+            text-align: center;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* Add some space between the gradient examples */
+        .gradient-box {
+            width: 100%;
+            max-width: 600px;
+            height: 150px;
+            margin: 20px auto;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* Linear gradient blends colors in a straight line */
+        .linear-gradient {
+            background: linear-gradient(to right, #ff512f, #dd2476);
+        }
+
+        /* Radial gradient spreads colors outward from a central point */
+        .radial-gradient {
+            background: radial-gradient(circle, #36d1dc, #5b86e5);
+        }
+
+        /* Conic gradient blends colors around a central point */
+        .conic-gradient {
+            background: conic-gradient(
+                #ff6b6b,
+                #feca57,
+                #48dbfb,
+                #5f27cd,
+                #ff6b6b
+            );
+        }
+
+        /* A diagonal gradient is another variation of a linear gradient */
+        .diagonal-gradient {
+            background: linear-gradient(135deg, #11998e, #38ef7d);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Gradients</h1>
+
+    <p>
+        CSS gradients let us blend two or more colors smoothly
+        without using an image file.
+    </p>
+
+    <!-- Example 1: Colors blend from left to right -->
+    <h2>1. Linear Gradient</h2>
+
+    <div class="gradient-box linear-gradient">
+        Linear Gradient
+    </div>
+
+    <!-- Example 2: Colors spread outward from the center -->
+    <h2>2. Radial Gradient</h2>
+
+    <div class="gradient-box radial-gradient">
+        Radial Gradient
+    </div>
+
+    <!-- Example 3: Colors rotate around a central point -->
+    <h2>3. Conic Gradient</h2>
+
+    <div class="gradient-box conic-gradient">
+        Conic Gradient
+    </div>
+
+    <!-- Example 4: Colors blend along a diagonal direction -->
+    <h2>4. Diagonal Gradient</h2>
+
+    <div class="gradient-box diagonal-gradient">
+        Diagonal Gradient
+    </div>
+
+</body>
+</html>
