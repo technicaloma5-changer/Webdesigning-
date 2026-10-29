@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Text Properties</title>
+
+    <style>
+        /* Keep the page simple and easy to read */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fa;
+            color: #333333;
+            margin: 0;
+            padding: 30px;
+        }
+
+        /* Style the main heading */
+        h1 {
+            color: #1d3557;
+            text-align: center;
+        }
+
+        /* Add a little space below the introduction */
+        .intro {
+            text-align: center;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        /* Give each example its own card */
+        .text-box {
+            background-color: white;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 700px;
+            border-radius: 8px;
+            border: 1px solid #dddddd;
+        }
+
+        /* Change the text color */
+        .text-color {
+            color: #0077b6;
+        }
+
+        /* Align the text in the center */
+        .text-alignment {
+            text-align: center;
+        }
+
+        /* Add an underline to the text */
+        .text-decoration {
+            text-decoration: underline;
+            text-decoration-color: #e63946;
+        }
+
+        /* Convert the text to uppercase */
+        .text-transform {
+            text-transform: uppercase;
+        }
+
+        /* Increase the space between letters */
+        .letter-spacing {
+            letter-spacing: 3px;
+        }
+
+        /* Improve readability by increasing line spacing */
+        .line-height {
+            line-height: 2;
+        }
+
+        /* Add a subtle shadow behind the text */
+        .text-shadow {
+            color: #1d3557;
+            text-shadow: 2px 2px 4px #bbbbbb;
+        }
+
+        /* Keep the example boxes comfortable to read on small screens */
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+
+            .text-box {
+                padding: 15px;
+            }
+
+            .letter-spacing {
+                letter-spacing: 1px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Text Properties</h1>
+
+    <p class="intro">
+        CSS text properties help us control how text looks on a webpage.
+        Here are some simple examples of commonly used text properties.
+    </p>
+
+    <!-- Example 1: Changing the color of text -->
+    <div class="text-box">
+        <h2>1. Text Color</h2>
+        <p class="text-color">
+            CSS makes it easy to change the color of text.
+        </p>
+    </div>
+
+    <!-- Example 2: Aligning text -->
+    <div class="text-box">
+        <h2>2. Text Alignment</h2>
+        <p class="text-alignment">
+            This text is aligned to the center.
+        </p>
+    </div>
+
+    <!-- Example 3: Adding decoration to text -->
+    <div class="text-box">
+        <h2>3. Text Decoration</h2>
+        <p class="text-decoration">
+            This text has an underline.
+        </p>
+    </div>
+
+    <!-- Example 4: Changing the capitalization of text -->
+    <div class="text-box">
+        <h2>4. Text Transform</h2>
+        <p class="text-transform">
+            css can change lowercase text into uppercase.
+        </p>
+    </div>
+
+    <!-- Example 5: Adjusting the space between letters -->
+    <div class="text-box">
+        <h2>5. Letter Spacing</h2>
+        <p class="letter-spacing">
+            Learning CSS is fun!
+        </p>
+    </div>
+
+    <!-- Example 6: Adjusting the space between lines -->
+    <div class="text-box">
+        <h2>6. Line Height</h2>
+        <p class="line-height">
+            Good line spacing makes text easier to read.<br>
+            It is especially useful for longer paragraphs.<br>
+            Try changing the line-height value to see the difference.
+        </p>
+    </div>
+
+    <!-- Example 7: Adding a shadow to text -->
+    <div class="text-box">
+        <h2>7. Text Shadow</h2>
+        <p class="text-shadow">
+            This text has a subtle shadow effect.
+        </p>
+    </div>
+
+</body>
+</html>
