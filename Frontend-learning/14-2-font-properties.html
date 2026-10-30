@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Font Properties</title>
+
+    <style>
+        /* Basic styling for the webpage */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fa;
+            color: #333333;
+            margin: 0;
+            padding: 30px;
+        }
+
+        /* Style the main heading */
+        h1 {
+            text-align: center;
+            color: #1d3557;
+        }
+
+        /* Introduction paragraph */
+        .intro {
+            text-align: center;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        /* Common styling for all example boxes */
+        .font-box {
+            background-color: white;
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #dddddd;
+            border-radius: 8px;
+        }
+
+        /* Change the font family */
+        .font-family {
+            font-family: Georgia, serif;
+        }
+
+        /* Increase the font size */
+        .font-size {
+            font-size: 24px;
+        }
+
+        /* Make the text bold */
+        .font-weight {
+            font-weight: bold;
+        }
+
+        /* Make the text lighter */
+        .light-text {
+            font-weight: 300;
+        }
+
+        /* Make the text italic */
+        .font-style {
+            font-style: italic;
+        }
+
+        /* Use a smaller font size */
+        .small-text {
+            font-size: 14px;
+        }
+
+        /* Use a larger and bold font */
+        .large-bold-text {
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        /* Keep the layout comfortable on smaller screens */
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+
+            .font-box {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Font Properties</h1>
+
+    <p class="intro">
+        CSS font properties help us control the appearance
+        of text on a webpage.
+    </p>
+
+    <!-- Example 1: Changing the font family -->
+    <div class="font-box">
+        <h2>1. Font Family</h2>
+        <p class="font-family">
+            This text uses the Georgia font family.
+        </p>
+    </div>
+
+    <!-- Example 2: Changing the font size -->
+    <div class="font-box">
+        <h2>2. Font Size</h2>
+        <p class="font-size">
+            This text has a font size of 24 pixels.
+        </p>
+    </div>
+
+    <!-- Example 3: Making text bold -->
+    <div class="font-box">
+        <h2>3. Font Weight</h2>
+        <p class="font-weight">
+            This text is bold because of font-weight.
+        </p>
+
+        <p class="light-text">
+            This text uses a lighter font weight.
+        </p>
+    </div>
+
+    <!-- Example 4: Making text italic -->
+    <div class="font-box">
+        <h2>4. Font Style</h2>
+        <p class="font-style">
+            This text is displayed in italic style.
+        </p>
+    </div>
+
+    <!-- Example 5: Combining multiple font properties -->
+    <div class="font-box">
+        <h2>5. Combining Font Properties</h2>
+
+        <p class="small-text">
+            This is an example of smaller text.
+        </p>
+
+        <p class="large-bold-text">
+            This text is large and bold.
+        </p>
+    </div>
+
+</body>
+</html>
