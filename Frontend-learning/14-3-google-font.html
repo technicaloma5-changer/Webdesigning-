@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Google Fonts</title>
+
+    <!-- Import Google Fonts using the link method -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Load Poppins and Roboto fonts from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Basic styling for the webpage */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f7fa;
+            color: #333333;
+            margin: 0;
+            padding: 30px;
+        }
+
+        /* Main heading uses Poppins font */
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            color: #1d3557;
+        }
+
+        /* Introduction paragraph */
+        .intro {
+            text-align: center;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+
+        /* Common styling for example boxes */
+        .font-box {
+            background-color: white;
+            max-width: 750px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #dddddd;
+            border-radius: 8px;
+        }
+
+        /* Apply Poppins font */
+        .poppins-font {
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+        }
+
+        /* Apply Roboto font */
+        .roboto-font {
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+        }
+
+        /* Use a lighter font weight */
+        .light-font {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+        }
+
+        /* Use a bold font weight */
+        .bold-font {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+        }
+
+        /* Use medium font weight */
+        .medium-font {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+        }
+
+        /* Keep the layout comfortable on smaller screens */
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+
+            .font-box {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Google Fonts</h1>
+
+    <p class="intro">
+        Google Fonts allows us to use different fonts on our websites.
+        We can easily change the appearance of text using external fonts.
+    </p>
+
+    <!-- Example 1: Using Poppins font -->
+    <div class="font-box">
+        <h2>1. Poppins Font</h2>
+
+        <p class="poppins-font">
+            This paragraph uses the Poppins font family.
+        </p>
+    </div>
+
+    <!-- Example 2: Using Roboto font -->
+    <div class="font-box">
+        <h2>2. Roboto Font</h2>
+
+        <p class="roboto-font">
+            This paragraph uses the Roboto font family.
+        </p>
+    </div>
+
+    <!-- Example 3: Different font weights -->
+    <div class="font-box">
+        <h2>3. Font Weights</h2>
+
+        <p class="light-font">
+            This text uses a light font weight (300).
+        </p>
+
+        <p class="medium-font">
+            This text uses a medium font weight (500).
+        </p>
+
+        <p class="bold-font">
+            This text uses a bold font weight (700).
+        </p>
+    </div>
+
+    <!-- Example 4: Combining different fonts -->
+    <div class="font-box">
+        <h2>4. Combining Google Fonts</h2>
+
+        <h3 class="poppins-font">
+            Learn Web Development
+        </h3>
+
+        <p class="roboto-font">
+            Practice HTML and CSS to improve your web development skills.
+        </p>
+    </div>
+
+</body>
+</html>
