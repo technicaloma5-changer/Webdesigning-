@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Text Alignment</title>
+
+    <style>
+        /* Basic styling for the webpage */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fa;
+            color: #333333;
+            margin: 0;
+            padding: 30px;
+        }
+
+        /* Main heading styling */
+        h1 {
+            text-align: center;
+            color: #1d3557;
+        }
+
+        /* Introduction paragraph */
+        .intro {
+            text-align: center;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        /* Common styling for example boxes */
+        .alignment-box {
+            background-color: white;
+            max-width: 750px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #dddddd;
+            border-radius: 8px;
+        }
+
+        /* Align text to the left */
+        .left-align {
+            text-align: left;
+        }
+
+        /* Align text to the right */
+        .right-align {
+            text-align: right;
+        }
+
+        /* Align text to the center */
+        .center-align {
+            text-align: center;
+        }
+
+        /* Make text spread evenly across the line */
+        .justify-align {
+            text-align: justify;
+        }
+
+        /* Demonstrate vertical alignment */
+        .vertical-example {
+            font-size: 24px;
+        }
+
+        .vertical-example span {
+            font-size: 14px;
+            vertical-align: super;
+            color: #e63946;
+        }
+
+        /* Keep the layout comfortable on smaller screens */
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+
+            .alignment-box {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Text Alignment</h1>
+
+    <p class="intro">
+        CSS text alignment properties help us control
+        the horizontal and vertical positioning of text.
+    </p>
+
+    <!-- Example 1: Left text alignment -->
+    <div class="alignment-box">
+        <h2>1. Text Align Left</h2>
+
+        <p class="left-align">
+            This paragraph is aligned to the left side.
+            Left alignment is commonly used for normal
+            website content and paragraphs.
+        </p>
+    </div>
+
+    <!-- Example 2: Right text alignment -->
+    <div class="alignment-box">
+        <h2>2. Text Align Right</h2>
+
+        <p class="right-align">
+            This paragraph is aligned to the right side.
+            Right alignment is useful in some special
+            design layouts.
+        </p>
+    </div>
+
+    <!-- Example 3: Center text alignment -->
+    <div class="alignment-box">
+        <h2>3. Text Align Center</h2>
+
+        <p class="center-align">
+            This paragraph is aligned in the center.
+            Center alignment is commonly used for headings.
+        </p>
+    </div>
+
+    <!-- Example 4: Justify text alignment -->
+    <div class="alignment-box">
+        <h2>4. Text Align Justify</h2>
+
+        <p class="justify-align">
+            Justify alignment adjusts the spacing between
+            words so that the text lines extend evenly
+            across the available width. It is often used
+            in articles, blogs and other long-form content.
+        </p>
+    </div>
+
+    <!-- Example 5: Vertical text alignment -->
+    <div class="alignment-box">
+        <h2>5. Vertical Align</h2>
+
+        <p class="vertical-example">
+            This is normal text
+            <span>Superscript Text</span>
+        </p>
+
+        <p>
+            The vertical-align property can position inline
+            elements relative to the surrounding text.
+        </p>
+    </div>
+
+</body>
+</html>
