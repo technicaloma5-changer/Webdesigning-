@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Width and Height</title>
+
+    <style>
+        /* Basic styling for the webpage */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fa;
+            color: #333333;
+            margin: 0;
+            padding: 30px;
+        }
+
+        /* Main heading styling */
+        h1 {
+            text-align: center;
+            color: #1d3557;
+        }
+
+        /* Introduction paragraph */
+        .intro {
+            text-align: center;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        /* Common styling for example boxes */
+        .example-box {
+            background-color: white;
+            max-width: 750px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #dddddd;
+            border-radius: 8px;
+        }
+
+        /* Set a fixed width */
+        .fixed-width {
+            width: 300px;
+            background-color: #a8dadc;
+            padding: 15px;
+            margin: 15px 0;
+        }
+
+        /* Set a fixed height */
+        .fixed-height {
+            height: 150px;
+            background-color: #f4a261;
+            padding: 15px;
+            margin: 15px 0;
+            box-sizing: border-box;
+        }
+
+        /* Set both width and height */
+        .width-height {
+            width: 250px;
+            height: 120px;
+            background-color: #b7e4c7;
+            padding: 15px;
+            margin: 15px 0;
+            box-sizing: border-box;
+        }
+
+        /* Set a maximum width */
+        .max-width {
+            width: 100%;
+            max-width: 400px;
+            background-color: #cdb4db;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        /* Set a minimum width */
+        .min-width {
+            min-width: 200px;
+            width: 50%;
+            background-color: #ffc8dd;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        /* Set a minimum height */
+        .min-height {
+            min-height: 100px;
+            background-color: #ffd6a5;
+            padding: 15px;
+        }
+
+        /* Set a maximum height */
+        .max-height {
+            max-height: 100px;
+            overflow: auto;
+            background-color: #d8e2dc;
+            padding: 15px;
+        }
+
+        /* Keep the examples responsive on smaller screens */
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+
+            .fixed-width {
+                max-width: 100%;
+                width: auto;
+            }
+
+            .example-box {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Width and Height</h1>
+
+    <p class="intro">
+        CSS width and height properties help us control
+        the size of HTML elements on a webpage.
+    </p>
+
+    <!-- Example 1: Setting a fixed width -->
+    <div class="example-box">
+        <h2>1. Width Property</h2>
+
+        <div class="fixed-width">
+            This box has a width of 300px.
+        </div>
+    </div>
+
+    <!-- Example 2: Setting a fixed height -->
+    <div class="example-box">
+        <h2>2. Height Property</h2>
+
+        <div class="fixed-height">
+            This box has a height of 150px.
+        </div>
+    </div>
+
+    <!-- Example 3: Setting both width and height -->
+    <div class="example-box">
+        <h2>3. Width and Height Together</h2>
+
+        <div class="width-height">
+            Width: 250px<br>
+            Height: 120px
+        </div>
+    </div>
+
+    <!-- Example 4: Using maximum width -->
+    <div class="example-box">
+        <h2>4. Max Width</h2>
+
+        <div class="max-width">
+            This box can grow up to 400px wide,
+            but it will not exceed that limit.
+        </div>
+    </div>
+
+    <!-- Example 5: Using minimum width -->
+    <div class="example-box">
+        <h2>5. Min Width</h2>
+
+        <div class="min-width">
+            This box will not become narrower than 200px.
+        </div>
+    </div>
+
+    <!-- Example 6: Using minimum height -->
+    <div class="example-box">
+        <h2>6. Min Height</h2>
+
+        <div class="min-height">
+            This box has a minimum height of 100px.
+        </div>
+    </div>
+
+    <!-- Example 7: Using maximum height -->
+    <div class="example-box">
+        <h2>7. Max Height</h2>
+
+        <div class="max-height">
+            This box has a maximum height of 100px.
+            When the content becomes larger than the available
+            space, a scrollbar appears so that users can
+            read the remaining content.
+            CSS helps us control the size of elements
+            and manage extra content inside them.
+        </div>
+    </div>
+
+</body>
+</html>
