@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Padding</title>
+
+    <style>
+        /* Basic styling for the webpage */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fa;
+            color: #333333;
+            margin: 0;
+            padding: 30px;
+        }
+
+        /* Main heading styling */
+        h1 {
+            text-align: center;
+            color: #1d3557;
+        }
+
+        /* Introduction paragraph */
+        .intro {
+            text-align: center;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        /* Common styling for example boxes */
+        .example-box {
+            background-color: white;
+            max-width: 750px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #dddddd;
+            border-radius: 8px;
+        }
+
+        /* Example 1: Equal padding on all sides */
+        .padding-all {
+            background-color: #a8dadc;
+            padding: 30px;
+            border: 2px solid #457b9d;
+        }
+
+        /* Example 2: Different padding on each side */
+        .padding-different {
+            background-color: #f4a261;
+            padding-top: 10px;
+            padding-right: 30px;
+            padding-bottom: 40px;
+            padding-left: 50px;
+            border: 2px solid #e76f51;
+        }
+
+        /* Example 3: Two-value padding shorthand */
+        .padding-two-values {
+            background-color: #b7e4c7;
+            padding: 20px 40px;
+            border: 2px solid #2d6a4f;
+        }
+
+        /* Example 4: Three-value padding shorthand */
+        .padding-three-values {
+            background-color: #cdb4db;
+            padding: 15px 30px 40px;
+            border: 2px solid #7b2cbf;
+        }
+
+        /* Example 5: Four-value padding shorthand */
+        .padding-four-values {
+            background-color: #ffc8dd;
+            padding: 10px 20px 30px 40px;
+            border: 2px solid #ff477e;
+        }
+
+        /* Example 6: Padding with box-sizing */
+        .padding-box-sizing {
+            width: 300px;
+            padding: 20px;
+            border: 5px solid #1d3557;
+            box-sizing: border-box;
+            background-color: #ffd6a5;
+        }
+
+        /* Keep the layout comfortable on smaller screens */
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+
+            .example-box {
+                padding: 15px;
+            }
+
+            .padding-box-sizing {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Padding</h1>
+
+    <p class="intro">
+        Padding is used to create space between the content
+        of an element and its border.
+    </p>
+
+    <!-- Example 1: Equal padding on all four sides -->
+    <div class="example-box">
+        <h2>1. Padding on All Sides</h2>
+
+        <div class="padding-all">
+            This box has 30px padding on all four sides.
+        </div>
+    </div>
+
+    <!-- Example 2: Individual padding properties -->
+    <div class="example-box">
+        <h2>2. Individual Padding Properties</h2>
+
+        <div class="padding-different">
+            Top: 10px<br>
+            Right: 30px<br>
+            Bottom: 40px<br>
+            Left: 50px
+        </div>
+    </div>
+
+    <!-- Example 3: Two-value padding shorthand -->
+    <div class="example-box">
+        <h2>3. Two-Value Padding</h2>
+
+        <div class="padding-two-values">
+            Padding: 20px 40px;
+            <br><br>
+            Top and Bottom: 20px<br>
+            Left and Right: 40px
+        </div>
+    </div>
+
+    <!-- Example 4: Three-value padding shorthand -->
+    <div class="example-box">
+        <h2>4. Three-Value Padding</h2>
+
+        <div class="padding-three-values">
+            Padding: 15px 30px 40px;
+            <br><br>
+            Top: 15px<br>
+            Left and Right: 30px<br>
+            Bottom: 40px
+        </div>
+    </div>
+
+    <!-- Example 5: Four-value padding shorthand -->
+    <div class="example-box">
+        <h2>5. Four-Value Padding</h2>
+
+        <div class="padding-four-values">
+            Padding: 10px 20px 30px 40px;
+            <br><br>
+            Top: 10px<br>
+            Right: 20px<br>
+            Bottom: 30px<br>
+            Left: 40px
+        </div>
+    </div>
+
+    <!-- Example 6: Padding with box-sizing -->
+    <div class="example-box">
+        <h2>6. Padding with Box Sizing</h2>
+
+        <div class="padding-box-sizing">
+            This box has a total declared width of 300px,
+            including its padding and border.
+        </div>
+    </div>
+
+</body>
+</html>
